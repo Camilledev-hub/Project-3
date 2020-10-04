@@ -206,6 +206,8 @@ display: flex;
 max-width:1216px;
 margin:0 auto;
 justify-content: space-between;
+margin-top:41px;
+padding:0 15px;
 }
 
 .column{
@@ -222,8 +224,7 @@ text-align: center;
    background-color: #FFFFFF;
    padding:50px 0;
    width: 100%;
-   margin-left:16px;
-   
+   margin-left:32px;  
 }
 
 
@@ -258,4 +259,13 @@ font-size: 20px;
 }
 .table-row .table-row-button {
    width: 120px;
+}
+
+title.row{
+width:100%;
+}
+
+.title-row{
+display:flex;
+align-items: center;
 }
