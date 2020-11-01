@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Asap&family=Catamaran:wght@700&display=swap" family=Catamaran:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Asap:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap" rel="stylesheet">
 </head>
@@ -22,7 +23,7 @@
 </div>
 
 <div class="topnav">
-<form action="/action_page.php">
+  <form action="/form/submit" autocomplete="off">
     <input type="text" placeholder="Search for a patient" name="search">
     <button type="submit" class="bnt"><h4>Search</h4></button>
 </form>
@@ -47,29 +48,249 @@
   </div>
 
   <div>
-    <button type="submit" class="bntRQ">
+    <button type="submit" class="btnRQ">
       <img src="Images/request-patient.svg" alt="request"></img>
       <h4>Request Patient</h4>
     </button>
   </div>
 
-</div>
- 
-
-  
+</div>  
 </section>
 
- 
+<div class="active">
+<div>
+  <h5>Active</h5>
+</div>
+<div>
+  <img src="Images/arrow.svg" alt="arrow"></img>
+</div>
+  <h5>Men</h5>
+</div>
+  </div>
 
-Create Group
-View all (76)
-Active (68)
-Inactive (8)
-Group Name (32)
-Another Group (17)
-Group Name (21)
-Group (56)
-Group Name (12)
+<section>
+<div class="row">
+
+<div id="groups" class="column">
+<li>
+  <ul>Create Group</ul>
+  <ul>View all (76)</ul>
+  <ul>Active (68)</ul>
+  <ul>Inactive (8)</ul>
+  <ul>Group Name (32)</ul>
+  <ul>Another Group (17)</ul>
+  <ul>Group Name (21)</ul>
+  <ul>Group (56)</ul>
+  <ul>Group Name (12)</ul>
+  </li>
+</div>
+
+<div id="status" class="column">
+ <div class="table-header">
+  <div class="table-row">
+    <div>
+      <h5>Patient</h5>
+    </div>
+    <div>
+      <h5>Status</h5>
+      <img src="Images/sort-by.svg" class="sort-by"></img>
+    </div>
+    <div>
+      <h5>Last Update</h5>
+      <img src="Images/sort-by.svg" class="sort-by"></img>
+    </div> 
+    <div>
+      <h5>Battery</h5>
+      <img src="Images/sort-by.svg" class="sort-by"></img>
+    </div>
+    <div class="table-row-button"></div>
+  </div>
+</div>
+
+<div class="table">
+  <div class="table-row">
+    <div>
+      <h3 class="text-color">John.N</h3>
+      <h4>ZD050</h4>
+    </div>
+    <div>
+      <h3>Depression</h3>
+      <h4>21.2.2020 (8/10)</h4>
+    </div>
+    <div>
+      <h3>Today, 6:30AM</h3>
+    </div>
+    <div>
+      <img src="Images/full.svg" alt="battery-full"></img>
+    </div>
+    <div class="table-row-button">
+      <button class="row-btn">View</button>
+      <img src="Images/more-icon.svg" alt="more-icon"></img>
+    </div>
+  </div>
+
+  <div class="table-row">
+    <div>
+      <h3 class="text-color">Joel.N</h3>
+      <h4>HG039</h4>
+    </div>
+    <div>
+      <h3>Remission</h3>
+      <h4>09.3.2020 (6/10)</h4>
+    </div>
+    <div><h3>Today, 8:32AM</h3></div>
+    <div>
+      <img src="Images/empty.svg" alt="battery-empty"></img>
+    </div>
+    <div class="table-row-button"><button class="row-btn">View</button></div>
+    <div>
+      <img src="Images/more-icon.svg" alt="more-icon"></img>
+    </div>
+  </div>
+  
+  <div class="table-row">
+    <div>
+    <h3 class="text-color">Zach.N</h3>
+    <h4>SP013</h4>
+  </div>
+    <div>
+    <h3>Depression</h3>
+    <h4>17.1.2020 (5/10)</h4>
+  </div>
+    <div><h3>Today, 4:37AM</h3></div>
+    <div>
+      <img src="Images/half.svg" alt="battery-half"></img>
+    </div>
+    <div class="table-row-button"><button class="row-btn">View</button></div>
+    <div>
+      <img src="Images/more-icon.svg" alt="more-icon"></img>
+    </div>
+  </div>
+
+    <div class="table-row">
+      <div>
+        <h3 class="text-color">Tom.P</h3>
+        <h4>LP098</h4>
+      </div>
+      <div>
+      <h3>Remission</h3>
+      <h4>24.2.2020 (3/10)</h4>
+      </div>
+      <div><h3>Yesterday, 9:23PM</h3></div>
+      <div>
+        <img src="Images/empty.svg" alt="battery-empty"></img>
+      </div>
+      <div class="table-row-button"><button class="row-btn">View</button></div>
+      <div>
+        <img src="Images/more-icon.svg" alt="more-icon"></img>
+      </div>
+    </div>
+
+    <div class="table-row">
+      <div>
+        <h3 class="text-color">Daniel.E</h3>
+        <h4>GN101</h4>
+      </div>
+      <div>
+      <h3>Remission</h3>
+      <h4>12.3.2020 (7/10)</h4>
+      </div>
+      <div><h3>Today, 9:48AM</h3></div>
+      <div>
+        <img src="Images/full.svg" alt="battery-full"></img>
+      </div>
+      <div class="table-row-button"><button class="row-btn">View</button></div>
+      <div>
+        <img src="Images/more-icon.svg" alt="more-icon"></img>
+      </div>
+    </div>
+
+    <div class="table-row">
+      <div>
+        <h3 class="text-color">Thomas.L</h3>
+        <h4>ER056</h4>
+      </div>
+      <div>
+      <h3>Depression</h3>
+      <h4>06.1.2020 (8/10)</h4>
+      </div>
+      <div><h3>Today, 8:56AM</h3></div>
+      <div>
+        <img src="Images/full.svg" alt="battery-full"></img>
+      </div>
+      <div class="table-row-button"><button class="row-btn">View</button></div>
+      <div>
+        <img src="Images/more-icon.svg" alt="more-icon"></img>
+      </div>
+    </div>
+
+    <div class="table-row">
+      <div>
+        <h3 class="text-color">Jason.I</h3>
+        <h4>OSO34</h4>
+      </div>
+      <div>
+      <h3>Depression</h3>
+      <h4>17.3.2020 (6/10)</h4>
+      </div>
+      <div><h3>Today, 6:30AM</h3></div>
+      <div>
+        <img src="Images/half.svg" alt="battery-half"></img>
+      </div>
+      <div class="table-row-button"><button class="row-btn">View</button></div>
+      <div>
+        <img src="Images/more-icon.svg" alt="more-icon"></img>
+      </div>
+    </div>
+
+    <div class="table-row">
+      <div>
+        <h3 class="text-color">Tom.A</h3>
+        <h4>GH012</h4>
+      </div>
+      <div>
+      <h3>Depression</h3>
+      <h4>04.2.2020 (5/10)</h4>
+      </div>
+      <div><h3>Yesterday, 11:41PM</h3></div>
+      <div>
+        <img src="Images/full.svg" alt="battery-full"></img>
+      </div>
+      <div class="table-row-button"><button class="row-btn">View</button></div>
+      <div>
+        <img src="Images/more-icon.svg" alt="more-icon"></img>
+      </div>
+    </div>
+  
+    <div class="table-row">
+      <div>
+        <h3 class="text-color">Jack.H</h3>
+        <h4>LP097</h4>
+      </div>
+      <div>
+      <h3>Remission</h3>
+      <h4>10.1.2020 (5/10)</h4>
+      </div>
+      <div><h3>Today, 7:39AM</h3></div>
+      <div>
+        <img src="Images/full.svg" alt="battery-full"></img>
+      </div>
+      <div class="table-row-button"><button class="row-btn">View</button></div>
+      <div>
+        <img src="Images/more-icon.svg" alt="more-icon"></img>
+      </div>
+    </div>
+</div>
+  </div>
+    </div>
+      </div>
+        </div>
+          </div>
+            </div>
+              </div>
+                </div>
+
+</section>
 
 <footer>
 <h2 class="footer">Made with ♥ by Camille</h2>

@@ -63,24 +63,29 @@ max-width: 100%;
 
 header{
 background-color: #001E2E;
-padding: 30px 0;
+padding: 22px 0;
+margin: 0 auto;
 }
 
 .container, .patient-top{
-display:flex;
+display: flex;
+justify-content: space-between;
 max-width: 1216px;
-margin:0 auto;
+margin: auto;
+align-items: center;
+padding: 0 15px;
 }
 
-.logo{
-margin-right: 150px;
+.topnav{
+width: 100%;
+margin: 0px 12%;
 }
 
 .topnav input[name=search] {
 border:none;
+width:100%;
 background: #334B58;
-width:432px;
-height: 36px;
+height: 52px;
 border-radius: 4px;
 border-top-right-radius: 0;
 border-bottom-right-radius: 0;
@@ -90,7 +95,7 @@ font-size: 17px;
 }
 
 ::placeholder{
-font-family: Asap;
+font-family:'Asap', sans-serif;
 font-style:normal;
 size:16px;
 line Height:24px;
@@ -98,12 +103,17 @@ color:#CFD9DE;
 }
 
 .topnav button h4{
-font-family: Asap;
+font-family:'Asap', sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 16px;
 line-height: 20px;
 color:#F4F4F6;
+}
+
+.topnav form{
+display: flex;
+width: 100%;
 }
 
 .topnav button[type=submit]{
@@ -113,7 +123,7 @@ background:#0191DB;
 border-radius: 4px;
 border-top-left-radius: 0;
 border-bottom-left-radius: 0;
-height: 36px;
+height: 52px;
 padding: 6px;
 font-size: 17px;
 cursor: pointer;
@@ -126,7 +136,7 @@ cursor: pointer;
 }
     
 .user-select{
-margin-left: 130px;
+display:flex;
 }
 
 select{
@@ -139,46 +149,42 @@ margin-top:10px;
 }
 
 select[name=name]{
-font-family: Asap;
+font-family: 'Asap', sans-serif;
 color:white;
 font-size:16px;
 line-height:20px;
 }
 
 .user-select img[alt=bell]{
-float: right;
 margin:0 auto;
-margin-top:10px;
-margin-left:20px;
+margin-left:40px;
 }
 
 
 h1{
-   font-family: 'Catamaran', sans-serif;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 48px;
-   line-height: 56px;
-   text-align: center;
-   color:black;
-   max-width: 600px;
-   margin: 0 auto;
-   margin-top: 40px;
+font-family: 'Catamaran', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 56px;
+text-align: center;
+color:black;
+max-width: 600px;
+margin: 0 auto;
+margin-top: 40px;
    
    }
 
-.bntRQ{
-   float: left;
-   width: 200px;
-   margin: 0 auto;
-   margin-left:755px;
-   margin-top:40px;
-   background:#0191DB;
-   border-radius: 4px;
-   height: 56px;
-   padding: 6px;
-   font-size: 17px;
-   cursor: pointer;
+.btnRQ{
+width: 200px;
+margin: 0 auto;
+margin-top:40px;
+background:#0191DB;
+border-radius: 4px;
+height: 56px;
+padding: 6px;
+font-size: 17px;
+cursor: pointer;
 }
 
 img[alt=request]{
@@ -187,20 +193,130 @@ margin:0 auto;
 padding-left:15px;
 }
 
-
 .patient-top h4{
-font-family:Asap;
+font-family:'Asap', sans-serif;
 font-weight: 600;
 size:16px;
 line-height:20px;
 color:white;
 }
 
+.active{
+justify-content: space-between;
+}
 
+.row {
+display: flex;
+max-width:1216px;
+margin:0 auto;
+justify-content: space-between;
+margin-top:41px;
+padding:0 15px;
+}
 
+.column{
+text-align: center;
+}
 
+#groups{
+background-color: #FFFFFF;
+padding:50px 0;
+width:288px;  
+}
 
+#status{
+background-color: #FFFFFF;
+width: 100%;
+margin-left:32px; 
+}
 
+.table {
+   text-align: left;
+}
+
+.table-row {
+   display: flex;
+   align-items: center;
+   padding: 24px 20px;
+   border-bottom: 1px solid #E7ECEE;
+   cursor: pointer;
+}
+.table-row:hover {
+   background-color: #E7ECEE;
+}
+.table-row div {
+width: 100%;
+}
+.table-row .table-row-button {
+   display: flex;
+   flex: 0 0 120px;
+}
+.table-header .table-row {
+   padding-top: 32px;
+   padding-bottom: 32px;
+}
+.table-header .table-row div {
+   display: flex;
+}
+.sort-by {
+   margin-left: 12px;
+}
+
+.row-btn {
+font-family:'Asap', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+background:#CFD9DE;
+border-radius: 100px;
+padding: 0 16px 0 16px;
+text-transform: uppercase;
+cursor: pointer;
+height: 40px;
+line-height: 40px;
+margin-right: 8px;
+}
+
+title.row{
+width:100%;
+}
+
+.title-row{
+display:flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.float{
+float:right;
+}
+
+h3{
+font-family: 'Asap', sans-serif;
+font-weight: 600;
+size:16px;
+line-height:20px;
+color:#728189;
+}
+
+.text-color{
+color:#001E2E;
+}
+
+h4{
+font-family: 'Asap', sans-serif;
+size: 14px;
+line-height: 16px;
+color:#728189;
+}
+
+h5{
+font-family: Asap;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 18px;
+}
 
 footer{
 background-color:#E5E5E5;
@@ -208,7 +324,7 @@ padding: 30px 0;
 margin-top:30px;
 text-align: center;
 }
-   
+      
 .footer{
 font-family: 'Indie Flower', cursive;
 color: black;
@@ -216,3 +332,4 @@ font-style: normal;
 font-weight: 300;
 font-size: 20px;
 }
+
